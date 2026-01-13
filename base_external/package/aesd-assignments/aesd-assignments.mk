@@ -6,7 +6,7 @@
 ##############################################################
 
 
-AESD_ASSIGNMENTS_VERSION = 68649926d111295afc5dfb09f9dac09a9695f959
+AESD_ASSIGNMENTS_VERSION = 7be63b59f0e25fa52ae6d4fc94453219fce4ed8f
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
 AESD_ASSIGNMENTS_SITE = git@github.com:cu-ecen-aeld/assignments-3-and-later-TheFakeMontyOnTheRun.git
@@ -21,9 +21,9 @@ endef
 define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
 	$(INSTALL) -d 0755 $(@D)/conf/ $(TARGET_DIR)/etc/finder-app/conf/
 	$(INSTALL) -m 0755 $(@D)/conf/* $(TARGET_DIR)/etc/finder-app/conf/
-	$(INSTALL) -m 0755 $(@D)/finder.sh $(TARGET_DIR)/etc/finder-app
-	$(INSTALL) -m 0755 $(@D)/finder-test.sh $(TARGET_DIR)/etc/finder-app
-	$(INSTALL) -m 0755 $(@D)/writer $(TARGET_DIR)/etc/finder-app
+	$(INSTALL) -m 0755 $(@D)/finder-app/finder.sh $(TARGET_DIR)/etc/finder-app
+	$(INSTALL) -m 0755 $(@D)/finder-app/finder-test.sh $(TARGET_DIR)/etc/finder-app
+	$(INSTALL) -m 0755 $(@D)/finder-app/writer $(TARGET_DIR)/etc/finder-app
 	$(INSTALL) -m 0755 $(@D)/assignment-autotest/test/assignment4/* $(TARGET_DIR)/bin
 endef
 
