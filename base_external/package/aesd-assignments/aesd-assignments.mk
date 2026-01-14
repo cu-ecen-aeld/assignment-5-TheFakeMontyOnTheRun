@@ -6,7 +6,7 @@
 ##############################################################
 
 
-AESD_ASSIGNMENTS_VERSION = 7be63b59f0e25fa52ae6d4fc94453219fce4ed8f
+AESD_ASSIGNMENTS_VERSION = 5727a6f059306d54cf268274463786ead585971c
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
 AESD_ASSIGNMENTS_SITE = git@github.com:cu-ecen-aeld/assignments-3-and-later-TheFakeMontyOnTheRun.git
